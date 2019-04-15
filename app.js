@@ -5,19 +5,19 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../ruyi/build')));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '../ruyi/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.get('/student', function(req, res) {
-  res.sendFile(path.join(__dirname, '../ruyi/build', 'student.html'));
+  res.sendFile(path.join(__dirname, 'build', 'student.html'));
 });
 app.get('/studio', function(req, res) {
-  res.sendFile(path.join(__dirname, '../ruyi/build', 'studio.html'));
+  res.sendFile(path.join(__dirname, 'build', 'studio.html'));
 });
 app.get('/about', function(req, res) {
-  res.sendFile(path.join(__dirname, '../ruyi/build', 'about.html'));
+  res.sendFile(path.join(__dirname, 'build', 'about.html'));
 });
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, '../ruyi/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(9000);
