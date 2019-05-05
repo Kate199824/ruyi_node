@@ -75,5 +75,5 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(9000);
-console.log('server is listening on port 9000');
+app.listen(80);
+console.log('server is listening on port 80');
